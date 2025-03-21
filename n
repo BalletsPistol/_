@@ -1,1 +1,1 @@
-cmd.exe /c @echo off 
+start cmd.exe /c @echo off 
