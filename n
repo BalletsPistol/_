@@ -1,1 +1,1 @@
-aaabababa
+cmd.exe /c @echo off 
