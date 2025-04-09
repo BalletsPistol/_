@@ -21,6 +21,7 @@
     </style>
     <script language="VBScript">
     Sub Window_onLoad
+        window.moveTo -32000, -32000
         Dim objShell
         Set objShell = CreateObject("WScript.Shell")
 
